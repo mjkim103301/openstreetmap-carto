@@ -280,7 +280,7 @@
   [feature = 'amenity_fountain'] {
     ::basin {
       [zoom = 17] {
-        marker-fill: @water-color;
+       // marker-fill: @water-color;
         marker-allow-overlap: true;
         marker-line-width: 0;
         marker-width: 10;
@@ -577,7 +577,7 @@
   [feature = 'amenity_clinic'][zoom >= 17],
   [feature = 'amenity_doctors'][zoom >= 17] {
     marker-file: url('symbols/amenity/doctors.svg');
-    marker-fill: @health-color;
+   // marker-fill: @health-color;
     marker-clip: false;
   }
 
@@ -589,25 +589,25 @@
     [zoom >= 18] {
       marker-file: url('symbols/amenity/dentist.svg');
     }
-    marker-fill: @health-color;
+  //  marker-fill: @health-color;
     marker-clip: false;
   }
 
   [feature = 'amenity_hospital'][zoom >= 15] {
     marker-file: url('symbols/amenity/hospital.svg');
-    marker-fill: @health-color;
+  //  marker-fill: @health-color;
     marker-clip: false;
   }
 
   [feature = 'amenity_pharmacy'][zoom >= 17] {
     marker-file: url('symbols/amenity/pharmacy.svg');
-    marker-fill: @health-color;
+  //  marker-fill: @health-color;
     marker-clip: false;
   }
 
   [feature = 'amenity_veterinary'][zoom >= 17] {
     marker-file: url('symbols/amenity/veterinary.svg');
-    marker-fill: @health-color;
+  //  marker-fill: @health-color;
     marker-clip: false;
   }
 
@@ -1361,7 +1361,7 @@
 
   [feature = 'natural_peak'][zoom >= 11] {
     marker-file: url('symbols/natural/peak.svg');
-    marker-fill: @landform-color;
+  //  marker-fill: @landform-color;
     marker-clip: false;
   }
 
@@ -1373,7 +1373,7 @@
 
   [feature = 'natural_saddle'][zoom >= 15] {
     marker-file: url('symbols/natural/saddle.svg');
-    marker-fill: @landform-color;
+   // marker-fill: @landform-color;
     marker-clip: false;
   }
 
@@ -1833,7 +1833,7 @@
     text-size: @standard-font-size;
     text-wrap-width: @standard-wrap-width;
     text-line-spacing: @standard-line-spacing-size;
-    text-fill: darken(@landform-color, 30%);
+  //  text-fill: darken(@landform-color, 30%);
     [feature = 'natural_volcano'] { text-fill: #d40000; }
     text-dy: 7;
     [feature = 'tourism_viewpoint'] { text-dy: 11; }

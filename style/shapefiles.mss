@@ -1,4 +1,4 @@
-#necountries {
+/#necountries {
   [zoom >= 1][zoom < 4] {
     line-width: 0.2;
     [zoom >= 2] {
