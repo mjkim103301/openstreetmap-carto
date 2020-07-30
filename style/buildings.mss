@@ -12,10 +12,10 @@
 
 #buildings {
   [zoom >= 14] {
-    polygon-fill: @building-low-zoom;
+   // polygon-fill: @building-low-zoom;
     polygon-clip: false;
     [zoom >= 15] {
-      polygon-fill: @building-fill;
+     // polygon-fill: @building-fill;
       line-color: @building-line;
       line-width: .75;
       line-clip: false;
@@ -25,12 +25,12 @@
     [aerialway = 'station'],
     [building = 'train_station'],
     [public_transport = 'station'] {
-      polygon-fill: @building-major-z14;
+    // polygon-fill: @building-major-z14;
       [zoom >= 15] {
-        polygon-fill: @building-major-z15;
+       // polygon-fill: @building-major-z15;
         line-color: @building-major-line;
         [zoom >= 16] {
-          polygon-fill: @building-major-fill;
+        //  polygon-fill: @building-major-fill;
         }
       }
     }
@@ -39,13 +39,13 @@
 
 #bridge {
   [zoom >= 12] {
-    polygon-fill: #B8B8B8;
+  //  polygon-fill: #B8B8B8;
   }
 }
 
 #entrances {
   [zoom >= 18]["entrance" != null]  {
-    marker-fill: @entrance-normal;
+  //  marker-fill: @entrance-normal;
     marker-allow-overlap: true;
     marker-ignore-placement: true;
     marker-file: url('symbols/rect.svg');
@@ -72,10 +72,10 @@
     }
     ["access" = "yes"],
     ["access" = "permissive"] {
-      marker-fill: @entrance-permissive;
+ //     marker-fill: @entrance-permissive;
     }
     ["access" = "no"] {
-      marker-fill: @entrance-normal;
+   //   marker-fill: @entrance-normal;
       marker-file: url('symbols/rectdiag.svg');
     }
   }

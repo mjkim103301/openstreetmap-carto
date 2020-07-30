@@ -90,7 +90,7 @@
   [feature = 'landuse_recreation_ground'][zoom >= 10],
   [feature = 'leisure_playground'][zoom >= 13],
   [feature = 'leisure_fitness_station'][zoom >= 13] {
-    polygon-fill: @leisure;
+  //  polygon-fill: @leisure;
     [zoom >= 15] {
       line-color: darken(@leisure, 60%);
       line-width: 0.3;
@@ -103,7 +103,7 @@
   [feature = 'tourism_caravan_site'],
   [feature = 'tourism_picnic_site'] {
     [zoom >= 10] {
-      polygon-fill: @campsite;
+   //   polygon-fill: @campsite;
       [zoom >= 13] {
         line-color: saturate(darken(@campsite, 60%), 30%);
         line-width: 0.3;
@@ -114,7 +114,7 @@
   }
 
   [feature = 'landuse_quarry'][zoom >= 10] {
-    polygon-fill: @quarry;
+  //  polygon-fill: @quarry;
     polygon-pattern-file: url('symbols/quarry.svg');
     [zoom >= 13] {
       line-width: 0.5;
@@ -126,7 +126,7 @@
 
   [feature = 'landuse_vineyard'] {
     [zoom >= 5] {
-      polygon-fill: @orchard;
+   //   polygon-fill: @orchard;
       [way_pixels >= 4]  { polygon-gamma: 0.75; }
       [way_pixels >= 64] { polygon-gamma: 0.3;  }
     }
@@ -140,7 +140,7 @@
 
   [feature = 'landuse_orchard'] {
     [zoom >= 5] {
-      polygon-fill: @orchard;
+   //   polygon-fill: @orchard;
       [way_pixels >= 4]  { polygon-gamma: 0.75; }
       [way_pixels >= 64] { polygon-gamma: 0.3;  }
     }
@@ -154,7 +154,7 @@
 
   [feature = 'leisure_garden'] {
     [zoom >= 10] {
-      polygon-fill: @grass;
+    //  polygon-fill: @grass;
       [way_pixels >= 4]  { polygon-gamma: 0.75; }
       [way_pixels >= 64] { polygon-gamma: 0.3;  }
     }
@@ -169,7 +169,7 @@
 
   [feature = 'landuse_plant_nursery'] {
     [zoom >= 10] {
-      polygon-fill: @orchard;
+    //  polygon-fill: @orchard;
       [way_pixels >= 4]  { polygon-gamma: 0.75; }
       [way_pixels >= 64] { polygon-gamma: 0.3;  }
     }
@@ -184,7 +184,7 @@
   [feature = 'landuse_cemetery'],
   [feature = 'amenity_grave_yard'] {
     [zoom >= 10] {
-      polygon-fill: @cemetery;
+   //   polygon-fill: @cemetery;
       [way_pixels >= 4]  { polygon-gamma: 0.75; }
       [way_pixels >= 64] { polygon-gamma: 0.3;  }
     }
@@ -205,7 +205,7 @@
 
   [feature = 'amenity_place_of_worship'][zoom >= 13],
   [feature = 'landuse_religious'][zoom >= 13] {
-    polygon-fill: @place_of_worship;
+   // polygon-fill: @place_of_worship;
     polygon-clip: false;
     [zoom >= 15] {
       line-color: @place_of_worship_outline;
@@ -223,9 +223,9 @@
   }
 
   [feature = 'landuse_residential'][zoom >= 8] {
-    polygon-fill: @built-up-lowzoom;
-    [zoom >= 12] { polygon-fill: @built-up-z12; }
-    [zoom >= 13] { polygon-fill: @residential; }
+  //  polygon-fill: @built-up-lowzoom;
+  //  [zoom >= 12] { polygon-fill: @built-up-z12; }
+  //  [zoom >= 13] { polygon-fill: @residential; }
     [zoom >= 16] {
       line-width: .5;
       line-color: @residential-line;
@@ -238,14 +238,14 @@
   }
 
   [feature = 'landuse_garages'][zoom >= 13] {
-    polygon-fill: @garages;
+  //  polygon-fill: @garages;
     [way_pixels >= 4]  { polygon-gamma: 0.75; }
     [way_pixels >= 64] { polygon-gamma: 0.3;  }
   }
 
   [feature = 'leisure_park'] {
     [zoom >= 10] {
-      polygon-fill: @park;
+   //   polygon-fill: @park;
       [way_pixels >= 4]  { polygon-gamma: 0.75; }
       [way_pixels >= 64] { polygon-gamma: 0.3;  }
     }
@@ -253,7 +253,7 @@
 
   [feature = 'leisure_ice_rink'][is_building = 'no'] {
     [zoom >= 10] {
-      polygon-fill: @glacier;
+    //  polygon-fill: @glacier;
       line-width: 0.5;
       line-color: saturate(darken(@pitch, 30%), 20%);
       [way_pixels >= 4]  { polygon-gamma: 0.75; }
@@ -263,7 +263,7 @@
 
   [feature = 'leisure_dog_park'] {
     [zoom >= 10] {
-      polygon-fill: @leisure;
+    //  polygon-fill: @leisure;
       [way_pixels >= 4]  { polygon-gamma: 0.75; }
       [way_pixels >= 64] { polygon-gamma: 0.3;  }
     }
@@ -277,14 +277,14 @@
 
   [feature = 'leisure_golf_course'][zoom >= 10],
   [feature = 'leisure_miniature_golf'][zoom >= 15] {
-    polygon-fill: @golf_course;
+  //  polygon-fill: @golf_course;
     [way_pixels >= 4]  { polygon-gamma: 0.75; }
     [way_pixels >= 64] { polygon-gamma: 0.3;  }
   }
 
   [feature = 'landuse_allotments'] {
     [zoom >= 10] {
-      polygon-fill: @allotments;
+   //   polygon-fill: @allotments;
       [way_pixels >= 4]  { polygon-gamma: 0.75; }
       [way_pixels >= 64] { polygon-gamma: 0.3;  }
     }
@@ -306,14 +306,14 @@
   [feature = 'landuse_forest'],
   [feature = 'natural_wood'] {
     [zoom >= 5] {
-      polygon-fill: @forest;
+    //  polygon-fill: @forest;
       [way_pixels >= 4]  { polygon-gamma: 0.75; }
       [way_pixels >= 64] { polygon-gamma: 0.3;  }
     }
   }
 
   [feature = 'landuse_farmyard'][zoom >= 10] {
-    polygon-fill: @farmyard;
+  //  polygon-fill: @farmyard;
       [zoom >= 16] {
         line-width: 0.5;
         line-color: @farmyard-line;
@@ -328,7 +328,7 @@
   [feature = 'landuse_farmland'],
   [feature = 'landuse_greenhouse_horticulture'] {
     [zoom >= 5] {
-      polygon-fill: @farmland;
+   //   polygon-fill: @farmland;
       [zoom >= 16] {
         line-width: .5;
         line-color: @farmland-line;
@@ -342,7 +342,7 @@
   [feature = 'landuse_meadow'][zoom >= 5],
   [feature = 'landuse_grass'][zoom >= 5],
   [feature = 'landuse_village_green'][zoom >= 5] {
-    polygon-fill: @grass;
+  //  polygon-fill: @grass;
     [way_pixels >= 4]  { polygon-gamma: 0.75; }
     [way_pixels >= 64] { polygon-gamma: 0.3;  }
   }
@@ -351,9 +351,9 @@
   [feature = 'shop_mall'],
   [feature = 'amenity_marketplace'] {
     [zoom >= 8] {
-      polygon-fill: @built-up-lowzoom;
-      [zoom >= 12] { polygon-fill: @built-up-z12; }
-      [zoom >= 13] { polygon-fill: @retail; }
+   //   polygon-fill: @built-up-lowzoom;
+   //   [zoom >= 12] { polygon-fill: @built-up-z12; }
+   //   [zoom >= 13] { polygon-fill: @retail; }
       [zoom >= 16] {
         line-width: 0.5;
         line-color: @retail-line;
@@ -367,9 +367,9 @@
   }
 
   [feature = 'landuse_industrial'][zoom >= 8] {
-    polygon-fill: @built-up-lowzoom;
-    [zoom >= 12] { polygon-fill: @built-up-z12; }
-    [zoom >= 13] { polygon-fill: @industrial; }
+  //  polygon-fill: @built-up-lowzoom;
+  //  [zoom >= 12] { polygon-fill: @built-up-z12; }
+  //  [zoom >= 13] { polygon-fill: @industrial; }
     [zoom >= 16] {
       line-width: .5;
       line-color: @industrial-line;
@@ -390,7 +390,7 @@
   }
 
   [feature = 'man_made_wastewater_plant'] {
-    polygon-fill: @industrial;
+ //   polygon-fill: @industrial;
     [zoom >= 15] {
       polygon-fill: @wastewater_plant;
     }
@@ -404,7 +404,7 @@
   }
 
   [feature = 'man_made_water_works'] {
-    polygon-fill: @industrial;
+ //   polygon-fill: @industrial;
     [zoom >= 15] {
       polygon-fill: @water_works;
     }
@@ -418,7 +418,7 @@
   }
 
   [feature = 'landuse_railway'][zoom >= 10] {
-    polygon-fill: @railway;
+ //   polygon-fill: @railway;
     [zoom >= 16][name != ''] {
       line-width: 0.7;
       line-color: @railway-line;
@@ -430,9 +430,9 @@
   [feature = 'power_plant'][zoom >= 10],
   [feature = 'power_generator'][zoom >= 10],
   [feature = 'power_substation'][zoom >= 13] {
-    polygon-fill: @industrial;
+ //   polygon-fill: @industrial;
     [zoom >= 15] {
-      polygon-fill: @power;
+ //    polygon-fill: @power;
     }
     [zoom >= 16] {
       line-width: 0.5;
@@ -446,9 +446,9 @@
   }
 
   [feature = 'landuse_commercial'][zoom >= 8] {
-    polygon-fill: @built-up-lowzoom;
-    [zoom >= 12] { polygon-fill: @built-up-z12; }
-    [zoom >= 13] { polygon-fill: @commercial; }
+ //   polygon-fill: @built-up-lowzoom;
+ //   [zoom >= 12] { polygon-fill: @built-up-z12; }
+  //  [zoom >= 13] { polygon-fill: @commercial; }
     [zoom >= 16] {
       line-width: 0.5;
       line-color: @commercial-line;
@@ -463,7 +463,7 @@
   [feature = 'landuse_brownfield'],
   [feature = 'landuse_construction'] {
     [zoom >= 10] {
-      polygon-fill: @construction;
+   //   polygon-fill: @construction;
       [way_pixels >= 4]  { polygon-gamma: 0.75; }
       [way_pixels >= 64] { polygon-gamma: 0.3;  }
     }
@@ -471,7 +471,7 @@
 
   [feature = 'landuse_landfill'] {
     [zoom >= 10] {
-      polygon-fill: #b6b592;
+  //    polygon-fill: #b6b592;
       [way_pixels >= 4]  { polygon-gamma: 0.75; }
       [way_pixels >= 64] { polygon-gamma: 0.3;  }
     }
@@ -515,13 +515,13 @@
   }
 
   [feature = 'natural_heath'][zoom >= 5] {
-    polygon-fill: @heath;
+ //   polygon-fill: @heath;
     [way_pixels >= 4]  { polygon-gamma: 0.75; }
     [way_pixels >= 64] { polygon-gamma: 0.3;  }
   }
 
   [feature = 'natural_scrub'][zoom >= 5] {
-    polygon-fill: @scrub;
+ //   polygon-fill: @scrub;
     [way_pixels >= 4]  { polygon-gamma: 0.75; }
     [way_pixels >= 64] { polygon-gamma: 0.3;  }
   }
@@ -547,7 +547,7 @@
   [feature = 'wetland_bog'],
   [feature = 'wetland_string_bog'] {
     [zoom >= 5] {
-      polygon-fill: @heath;
+  //    polygon-fill: @heath;
       [way_pixels >= 4]  { polygon-gamma: 0.75; }
       [way_pixels >= 64] { polygon-gamma: 0.3;  }
     }
@@ -580,15 +580,15 @@
   [feature = 'amenity_social_facility'],
   [feature = 'amenity_arts_centre'] {
     [zoom >= 10] {
-      polygon-fill: @built-up-lowzoom;
+  //    polygon-fill: @built-up-lowzoom;
       [way_pixels >= 4]  { polygon-gamma: 0.75; }
       [way_pixels >= 64] { polygon-gamma: 0.3;  }
     }
     [zoom >= 12] {
-      polygon-fill: @built-up-z12;
+  //    polygon-fill: @built-up-z12;
     }
     [zoom >= 13] {
-      polygon-fill: @societal_amenities;
+   //   polygon-fill: @societal_amenities;
       line-width: 0.3;
       line-color: darken(@societal_amenities, 35%);
     }
@@ -614,7 +614,7 @@
   [feature = 'amenity_motorcycle_parking'],
   [feature = 'amenity_taxi'] {
     [zoom >= 14] {
-      polygon-fill: @parking;
+ //     polygon-fill: @parking;
       [zoom >= 15] {
         line-width: 0.3;
         line-color: @parking-outline;
@@ -638,7 +638,7 @@
   [feature = 'aeroway_aerodrome'][zoom >= 10],
   [feature = 'amenity_ferry_terminal'][zoom >= 15],
   [feature = 'amenity_bus_station'][zoom >= 15] {
-    polygon-fill: @transportation-area;
+ //   polygon-fill: @transportation-area;
     line-width: 0.2;
     line-color: saturate(darken(@transportation-area, 40%), 20%);
     [way_pixels >= 4]  { polygon-gamma: 0.75; }
@@ -662,14 +662,14 @@
   }
 
   [feature = 'railway_station'][zoom >= 10] {
-    polygon-fill: @railway;
+ //   polygon-fill: @railway;
   }
 
   [feature = 'leisure_sports_centre'],
   [feature = 'leisure_water_park'],
   [feature = 'leisure_stadium'] {
     [zoom >= 10] {
-      polygon-fill: @stadium;
+  //    polygon-fill: @stadium;
       [way_pixels >= 4]  { polygon-gamma: 0.75; }
       [way_pixels >= 64] { polygon-gamma: 0.3;  }
       [zoom >= 13] {
@@ -680,7 +680,7 @@
   }
 
   [feature = 'leisure_track'][zoom >= 10] {
-    polygon-fill: @track;
+ //  polygon-fill: @track;
     [zoom >= 15] {
       line-width: 0.5;
       line-color: desaturate(darken(@track, 20%), 10%);
@@ -690,7 +690,7 @@
   }
 
   [feature = 'leisure_pitch'][zoom >= 10] {
-    polygon-fill: @pitch;
+  //  polygon-fill: @pitch;
     [zoom >= 15] {
       line-width: 0.5;
       line-color: desaturate(darken(@pitch, 20%), 10%);
