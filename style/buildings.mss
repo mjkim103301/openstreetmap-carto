@@ -10,6 +10,7 @@
 @entrance-permissive: darken(@building-line, 15%);
 @entrance-normal: @building-line;
 
+/*
 #buildings {
   [zoom >= 14] {
    // polygon-fill: @building-low-zoom;
@@ -84,3 +85,4 @@
     marker-height: 8.0;
   }
 }
+*/

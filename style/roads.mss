@@ -321,7 +321,7 @@
 @minor-highway-text-repeat-distance: 10;
 
 @railway-text-repeat-distance: 200;
-
+/*
 #roads-casing, #bridges, #tunnels {
   ::casing {
     [zoom >= 12] {
@@ -3586,3 +3586,4 @@ tertiary is rendered from z10 and is not included in osm_planet_roads. */
     }
   }
 }
+*/

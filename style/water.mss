@@ -4,6 +4,7 @@
 
 @waterway-text-repeat-distance: 200;
 
+/*
 #water-areas {
   [natural = 'glacier']::natural {
     [zoom >= 5] {
@@ -324,3 +325,4 @@
     }
   }
 }
+*/
